@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Room homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav">
+        <img
+          src="images/icon-hamburger.svg"
+          alt="menu_button"
+          class="hamburger-btn"
+        />
+
+        <img
+          src="images/icon-close.svg"
+          alt=""
+          id="close-btn"
+          class="unshowed"
+        />
+
+        <img src="images/logo.svg" alt="" class="logo showed" />
+
+        <div id="nav-links" class="nav-links">
+          <a href="" class="nav-link">Home</a>
+          <a href="" class="nav-link">Shop </a>
+          <a href="" class="nav-link">About</a>
+          <a href="" class="nav-link">Contact</a>
+        </div>
+      </div>
+      <div class="wrap_1">
+        <div class="section_1">
+          <div class="slide-img">
+            <img
+              src="images/desktop-image-hero-1.jpg"
+              alt=""
+              class="desktop-img"
+            />
+
+            <img
+              src="images/desktop-image-hero-2.jpg "
+              alt=""
+              class="desktop-img nodisplay"
+            />
+
+            <img
+              src="images/desktop-image-hero-3.jpg"
+              alt=""
+              class="desktop-img nodisplay"
+            />
+
+            <img
+              src="images/mobile-image-hero-1.jpg"
+              alt=""
+              class="sm-img main"
+            />
+            <img src="images/mobile-image-hero-2.jpg" alt="" class="sm-img" />
+            <img src="images/mobile-image-hero-3.jpg" alt="" class="sm-img" />
+          </div>
+          <div class="sm-arrow">
+            <div class="prev" onclick="slideShow('prev')">
+              <img src="images/icon-angle-left.svg" alt="slide-left" />
+            </div>
+            <div class="next" onclick="slideShow('next')">
+              <img src="images/icon-angle-right.svg" alt="slide-right" />
+            </div>
+          </div>
+        </div>
+
+        <div class="section_2">
+          <div class="slider-wrapper">
+            <div class="slider-text">
+              <div class="slide-text-1">
+                <h1 class="head-line">Discover innovative ways to decorate</h1>
+                <p class="text-section">
+                  We provide unmatched quality, comfort, and style for property
+                  owners across the country. Our experts combine form and
+                  function in bringing your vision to life. Create a room in
+                  your own style with our collection and make your property a
+                  reflection of you and what you love.
+                </p>
+              </div>
+              <div class="slide-text-2 nodisplay">
+                <h1 class="head-line">We are available all across the globe</h1>
+                <p class="text-section">
+                  With stores all over the world, it's easy for you to find
+                  furniture for your home or place of business. Locally, we’re
+                  in most major cities throughout the country. Find the branch
+                  nearest you using our store locator. Any questions? Don't
+                  hesitate to contact us today.
+                </p>
+              </div>
+
+              <div class="slide-text-3 nodisplay">
+                <h1 class="head-line">Manufactured with the best materials</h1>
+                <p class="text-section">
+                  Our modern furniture store provide a high level of quality.
+                  Our company has invested in advanced technology to ensure that
+                  every product is made as perfect and as consistent as
+                  possible. With three decades of experience in this industry,
+                  we understand what customers want for their home and office.
+                </p>
+              </div>
+            </div>
+
+            <div class="cta">
+              <a href="" class="cta-link"><h4>SHOP NOW</h4></a>
+
+              <img src="images/icon-arrow.svg" alt="" class="cta-icon" />
+            </div>
+          </div>
+
+          <div class="lg-arrow">
+            <div class="prev" onclick="slideShow('prev')">
+              <img src="images/icon-angle-left.svg" alt="slide-left" />
+            </div>
+            <div class="next" onclick="slideShow('next')">
+              <img src="images/icon-angle-right.svg" alt="slide-right" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap_2">
+        <div class="container_1"></div>
+        <div class="container_2">
+          <h2 class="about-head">About our furniture</h2>
+          <p class="about-text">
+            Our multifunctional collection blends design and function to suit
+            your individual taste. Make each room unique, or pick a cohesive
+            theme that best express your interests and what inspires you. Find
+            the furniture pieces you need, from traditional to contemporary
+            styles or anything in between. Product specialists are available to
+            help you create your dream space.
+          </p>
+        </div>
+        <div class="container_3"></div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Varga Agnes SuperDev</a>
+      <div id="dark" class="nodisplay"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
